@@ -105,3 +105,32 @@ Legacy Balance: 0.00
 
 ---
 
+## Q3 – Longest Substring Without Repeating Characters
+
+- **Package:** `com.example.q3`
+
+### Description
+Find the length of the longest substring in a given string that contains no repeating characters.
+
+### Technical Details
+- **Algorithm:** Sliding window technique using a `HashMap` to track the last seen index of each character.  
+- **Time Complexity:** O(n), where n is the length of the input string.  
+- **Space Complexity:** O(min(n, charset size)) for storing character indices.  
+- **Behavior:**  
+  - Repeated characters in the current window shift the start of the substring past the previous occurrence.  
+  - Supports all printable characters including letters, digits, symbols, and spaces.  
+
+### Usage
+1. Run `LongestSubstringFinder.main()`.
+2. Enter the string when prompted.
+3. The program outputs the length of the longest substring without duplicate characters.
+
+### Input Example
+```
+Enter a string: pwwkew
+```
+
+### Output Example
+```
+Length of longest substring without repeating characters: 3
+```
