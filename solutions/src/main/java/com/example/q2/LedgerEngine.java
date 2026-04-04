@@ -97,7 +97,7 @@ public class LedgerEngine {
 
         System.out.println("Active Balance: " + summary.activeBalance().setScale(2, RoundingMode.HALF_EVEN));
         System.out.println("Legacy Balance: " + summary.legacyBalance().setScale(2, RoundingMode.HALF_EVEN));
-    
+
     }
 
 }

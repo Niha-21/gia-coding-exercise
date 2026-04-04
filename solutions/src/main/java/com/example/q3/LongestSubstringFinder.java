@@ -9,10 +9,12 @@ public class LongestSubstringFinder {
     public LongestSubstringFinder(String s) {
         this.inputString = s;
     }
-    
+
     /**
-     * Calculates the length of the longest substring without repeating characters in the input string.
-     * Uses a sliding window approach with a HashMap to track the last seen index of each character.
+     * Calculates the length of the longest substring without repeating characters
+     * in the input string.
+     * Uses a sliding window approach with a HashMap to track the last seen index of
+     * each character.
      * Time Complexity: O(n), Space Complexity: O(min(n, charset size))
      *
      * @return the length of the longest substring without duplicate characters
