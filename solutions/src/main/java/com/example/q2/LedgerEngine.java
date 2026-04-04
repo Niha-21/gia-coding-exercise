@@ -64,14 +64,11 @@ public class LedgerEngine {
         Scanner scanner = new Scanner(System.in);
         List<Transaction> transactions = new ArrayList<>();
 
-        System.out.println("Enter transactions (type 'done' for ID to finish).");
         System.out.println("For timestamp, enter how many days ago the transaction occurred (0 for today).");
 
         while (true) {
             System.out.print("Transaction ID: ");
             String id = scanner.nextLine();
-            if (id.equalsIgnoreCase("done"))
-                break;
 
             System.out.print("Amount: ");
             BigDecimal amount = new BigDecimal(scanner.nextLine());
