@@ -39,13 +39,17 @@ INFO, WARN, ERROR, DEBUG
 3. Press Enter on an empty line to finish
 
 ### Input Example
+```
 "2026-03-25 10:00:00 [INFO] Login success"  
 "2026-03-25 10:01:00 [ERROR] Connection failed"  
 "2026-03-25 10:02:00 [INFO] User logout" 
+```
 
 ### Output Example
-Counts: {"INFO": 2, "ERROR": 1} 
+```
+Counts: {"INFO": 2, "ERROR": 1}
 Latest Messages: {"INFO": "User logout", "ERROR": "Connection failed"} 
+```
 
 ### Notes
 - Skips null, empty, or malformed lines
