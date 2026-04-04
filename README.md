@@ -134,3 +134,40 @@ Enter a string: pwwkew
 ```
 Length of longest substring without repeating characters: 3
 ```
+
+---
+
+## Q4 – Reverse Integer
+
+- **Package:** `com.example.q4`
+
+### Description
+Given a signed 32-bit integer, reverse its digits.  
+If the reversed integer overflows the 32-bit signed integer range `[-2147483648, 2147483647]`, the program returns `0`.
+
+### Technical Details
+- **Algorithm:** Extract digits one by one using modulo (`% 10`) and division (`/ 10`), then build the reversed number.  
+- **Overflow Handling:** Before multiplying and adding a digit, checks are made to ensure the result stays within the 32-bit signed integer range.  
+- **Time Complexity:** O(n), where n is the number of digits in the integer.  
+- **Space Complexity:** O(1), uses only a few integer variables.  
+- **Behavior:**  
+  - Handles negative numbers automatically.  
+  - Leading zeros in the reversed number are removed.  
+  - Returns `0` for inputs whose reversal exceeds the 32-bit signed range.  
+
+### Usage
+1. Run `ReverseInteger.main()`.
+2. Enter a signed integer (without commas) when prompted.
+3. The program outputs the reversed integer or `0` if it overflows.
+
+### Input Example
+```
+Enter an integer: -123
+```
+
+### Output Example
+```    
+Reversed integer: -321
+```
+
+---
